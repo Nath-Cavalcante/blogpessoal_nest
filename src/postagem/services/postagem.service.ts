@@ -6,6 +6,7 @@ import { TemaService } from "../../tema/services/tema.service";
 
 @Injectable()
 export class PostagemService {
+    [x: string]: any;
     constructor(
         @InjectRepository(Postagem)
         private postagemRepository: Repository<Postagem>,
